@@ -3,3 +3,16 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+api:
+  path: /api
+  controller: App\Controller\ApiRestController
+
+exchange_values_post:
+  path: /exchange/values
+  controller: App\Controller\ExchangeController::exchangeValues
+  methods: POST
+
+exchange_values_get:
+  path: /exchange/values
+  controller: App\Controller\ExchangeController::getAllHistory
+  methods: GET
